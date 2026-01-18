@@ -1,0 +1,10 @@
+^C:\USERS\VINCE\ONEDRIVE\DOCUMENTS\GITHUB\WEEK1-2-GAME-INTRODUCTION-VINCE987654321\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/vince/OneDrive/Documents/GitHub/week1-2-game-introduction-Vince987654321 -BC:/Users/vince/OneDrive/Documents/GitHub/week1-2-game-introduction-Vince987654321/build --check-stamp-file C:/Users/vince/OneDrive/Documents/GitHub/week1-2-game-introduction-Vince987654321/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
